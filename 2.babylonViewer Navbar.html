@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BabylonJS Viewer - Basic usage</title>
+        <style>
+			.viewerContainer {
+                width: 400px;
+                height: 500px;				
+				image-rendering: pixelated; /* to prevent blury when zoomed out */
+			}
+
+        </style>
+		<script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
+	<script>
+		function loadit(modelUrl) {
+			if(modelUrl) {
+				let viewer = BabylonViewer.viewerManager.getViewerById('viewerID');
+				let temp = viewer.templateManager.getTemplate('navBar');
+				let param= temp._configuration;
+				param.params.hideVr=false;
+                param.params.disableOnFullscreen=true;
+				temp.updateParams(param);
+				viewer.loadModel(modelUrl)
+			}
+		}
+	</script>
+</head>
+<body>
+<select onchange="loadit(this.value)">
+	<option value="">select model</option>
+	<option value="./models/alice.glb">Alice</option>
+	<option value="./models/Astronaut.glb">Astronaut</option>
+	<option value="./models/buddha.glb">Buddha</option>
+</select>
+<div class='viewerContainer'>
+	<babylon id="viewerID"><vr></vr></babylon>
+</div>
+</body>
+
+</html>
