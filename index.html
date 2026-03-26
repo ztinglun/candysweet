@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CandySweet</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandySweet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 32px 16px;
-      background: linear-gradient(135deg, #ffe4ef 0%, #f6e7ff 50%, #e7f2ff 100%);
-      color: #332342;
-    }
+        body {
+            font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px;
+            background: linear-gradient(135deg, #ffe4ef 0%, #f6e8ff 50%, #eaf4ff 100%);
+        }
 
-    .wrapper {
-      width: 100%;
-      max-width: 900px;
-      background: rgba(255, 255, 255, 0.72);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.9);
-      border-radius: 28px;
-      box-shadow: 0 18px 45px rgba(94, 72, 124, 0.16);
-      padding: 42px 28px;
-    }
+        .box {
+            width: 100%;
+            max-width: 850px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            padding: 40px 28px;
+            box-shadow: 0 18px 40px rgba(95, 72, 124, 0.15);
+        }
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      text-align: center;
-      margin-bottom: 28px;
-      color: #7a2f71;
-      letter-spacing: 0.5px;
-    }
+        h1 {
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #7a2f71;
+            margin-bottom: 28px;
+        }
 
-    .menu {
-      display: grid;
-      gap: 18px;
-    }
+        .menu {
+            display: grid;
+            gap: 18px;
+        }
 
-    .menu a {
-      display: block;
-      text-decoration: none;
-      color: #3f2b52;
-      font-size: 1.15rem;
-      font-weight: 600;
-      padding: 22px 24px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid rgba(255, 255, 255, 0.95);
-      box-shadow: 0 10px 24px rgba(94, 72, 124, 0.10);
-      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-    }
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #3d2b4f;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px 22px;
+            border-radius: 18px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(95, 72, 124, 0.10);
+            transition: 0.25s ease;
+        }
 
-    .menu a:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 32px rgba(94, 72, 124, 0.16);
-      background: linear-gradient(135deg, rgba(255, 223, 238, 0.95), rgba(235, 226, 255, 0.95));
-    }
+        .menu a:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, #ffe4ef, #eee3ff);
+            box-shadow: 0 16px 28px rgba(95, 72, 124, 0.16);
+        }
 
-    @media (max-width: 640px) {
-      .wrapper {
-        padding: 30px 18px;
-      }
+        @media (max-width: 640px) {
+            .box {
+                padding: 28px 18px;
+            }
 
-      .menu a {
-        font-size: 1rem;
-        padding: 18px 18px;
-      }
-    }
-  </style>
+            .menu a {
+                font-size: 1rem;
+                padding: 16px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>hello MyFriend</h1>
+    <div class="box">
+        <h1>hello MyFriend</h1>
 
-    <div class="menu">
-      <a href="./bodoh/">bodoh</a>
-      <a href="./basic/">Babylon Viewer Basic</a>
-      <a href="./select/">Babylon Viewer Select</a>
-      <a href="./navbar/">Babylon Viewer Navbar</a>
+        <div class="menu">
+            <a href="sketchfab.html">bodoh</a>
+            <a href="0.babylonViewer Basic.html">Babylon Viewer Basic</a>
+            <a href="1.babylonViewer Select.html">Babylon Viewer Select</a>
+            <a href="2.babylonViewer Navbar.html">Babylon Viewer Navbar</a>
+        </div>
     </div>
-  </div>
 </body>
 </html>
